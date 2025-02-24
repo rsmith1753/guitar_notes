@@ -1,4 +1,4 @@
-package audio.utils
+package com.audio.utils
 
 class Utils {
 

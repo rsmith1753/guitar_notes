@@ -1,6 +1,6 @@
-package audio.live
+package com.audio.live
 
-import audio.DSPConfig
+import com.audio.utils.DSPConfig
 
 import javax.sound.sampled.AudioFormat
 import javax.sound.sampled.AudioSystem

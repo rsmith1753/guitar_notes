@@ -7,12 +7,33 @@ version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    maven {
+        url "https://repo.grails.org/grails/core/"
+    }
+    maven {
+        name "TarsosDSP repository"
+        url "https://mvn.0110.be/releases"
+    }
 }
 
 dependencies {
     implementation 'org.codehaus.groovy:groovy-all:3.0.19'
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    // DSP
+    implementation 'com.github.psambit9791:jdsp:3.1.0'
+    implementation 'be.tarsos.dsp:core:2.5'
+    implementation 'be.tarsos.dsp:jvm:2.5'
+}
+
+
+//mainClass {
+//    mainClass.set("guitar_notes.com.Main")
+//}
+
+java {
+    sourceCompatibility = JavaVersion.toVersion("11")
 }
 
 test {
